@@ -15,30 +15,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  // 你的站点主域名（便于生成绝对URL、canonical等）
+  // 主域名（便于生成绝对URL、canonical等）
   metadataBase: new URL("https://doctoral-application-readiness-calc.top"),
 
-  // 更丰富的标题设置（可选）
+  // 标题与描述
   title: {
     default: "PhD Readiness Score",
     template: "%s | PhD Readiness Score",
   },
   description: "Interactive 0–10 rubric for PhD application readiness.",
 
-  // 搜索引擎站点验证（你给的 token 已填写）
+  // 搜索引擎站点验证
   verification: {
     google: "67Mp7Fny2XC3s23GQznzv9F3NWIqwIW1QBs4cU5CpJg",
-    bing: "C850AA3E0866390AF697D64E3BE5264C",
-    // 如果后续接入百度，可这样加：
-    // other: { "baidu-site-verification": "你的百度验证字符串" },
+    other: {
+      "msvalidate.01": "C850AA3E0866390AF697D64E3BE5264C", // Bing
+      "baidu-site-verification": "codeva-m88WZWLgpO",          // 百度
+    },
   },
 
-  // 生成 canonical（有助于收录）
+  // canonical
   alternates: {
     canonical: "/",
   },
 
-  // robots 建议（允许收录）
+  // robots
   robots: {
     index: true,
     follow: true,
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
     },
   },
 
-  // 简单的 Open Graph（分享卡片信息）
+  // Open Graph
   openGraph: {
     title: "PhD Readiness Score",
     description:
@@ -66,7 +67,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* 把字体变量挂到 body 上，避免未使用 */}
+      {/* 应用字体变量 */}
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         <Analytics />
@@ -75,4 +76,3 @@ export default function RootLayout({
     </html>
   );
 }
-
