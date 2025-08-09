@@ -29,6 +29,16 @@ const PG_CLASS_TO_SCORE: Record<string, number> = {
   other: 5.0,
 };
 
+// Scheme options (typed, no any)
+const schemeOptions = [
+  { id: "default", label: "默认（理工/CS）" },
+  { id: "engineering", label: "工程应用型" },
+  { id: "humanities", label: "人文社科" },
+] as const;
+
+// Derive the union type from options
+type Scheme = typeof schemeOptions[number]["id"];
+
 function Section({ title, subtitle, children }: { title: string; subtitle?: string; children: React.ReactNode }) {
   return (
     <div className="bg-white/70 backdrop-blur rounded-2xl shadow-sm border border-gray-100 p-5 md:p-6">
@@ -105,7 +115,7 @@ function Toggle({ checked, onChange, label }: { checked: boolean; onChange: (v: 
 
 export default function PhDEvalCalculator() {
   // --- Weight scheme ---
-  const [scheme, setScheme] = useState<"default" | "humanities" | "engineering">("default");
+  const [scheme, setScheme] = useState<Scheme>("default");
 
   const weights = useMemo(() => {
     if (scheme === "humanities") return { AG: 0.25, RP: 0.35, RE: 0.15, RL: 0.15, PI: 0.10 };
@@ -262,14 +272,10 @@ export default function PhDEvalCalculator() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-6">
           <Section title="评估方案">
             <div className="flex flex-wrap gap-2">
-              {[
-                { id: "default", label: "默认（理工/CS）" },
-                { id: "engineering", label: "工程应用型" },
-                { id: "humanities", label: "人文社科" },
-              ].map((opt) => (
+              {schemeOptions.map((opt) => (
                 <button
                   key={opt.id}
-                  onClick={() => setScheme(opt.id as any)}
+                  onClick={() => setScheme(opt.id)}
                   className={`rounded-xl px-3 py-2 text-sm border transition ${scheme === opt.id ? "bg-gray-900 text-white border-gray-900" : "bg-white border-gray-200 hover:bg-gray-50"}`}
                 >
                   {opt.label}
@@ -328,7 +334,7 @@ export default function PhDEvalCalculator() {
                       { id: "third", label: "Third" },
                       { id: "other", label: "其他" },
                     ].map((opt) => (
-                      <button key={opt.id} onClick={() => setUgClass(opt.id as any)} className={`rounded-xl px-3 py-2 text-sm border ${ugClass === opt.id ? "bg-gray-900 text-white border-gray-900" : "bg-white border-gray-200 hover:bg-gray-50"}`}>{opt.label}</button>
+                      <button key={opt.id} onClick={() => setUgClass(opt.id)} className={`rounded-xl px-3 py-2 text-sm border ${ugClass === opt.id ? "bg-gray-900 text-white border-gray-900" : "bg-white border-gray-200 hover:bg-gray-50"}`}>{opt.label}</button>
                     ))}
                   </div>
                 ) : (
@@ -355,7 +361,7 @@ export default function PhDEvalCalculator() {
                       { id: "pass", label: "Pass" },
                       { id: "other", label: "其他" },
                     ].map((opt) => (
-                      <button key={opt.id} onClick={() => setPgClass(opt.id as any)} className={`rounded-xl px-3 py-2 text-sm border ${pgClass === opt.id ? "bg-gray-900 text-white border-gray-900" : "bg-white border-gray-200 hover:bg-gray-50"}`}>{opt.label}</button>
+                      <button key={opt.id} onClick={() => setPgClass(opt.id)} className={`rounded-xl px-3 py-2 text-sm border ${pgClass === opt.id ? "bg-gray-900 text-white border-gray-900" : "bg-white border-gray-200 hover:bg-gray-50"}`}>{opt.label}</button>
                     ))}
                   </div>
                 ) : (
