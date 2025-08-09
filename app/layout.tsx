@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
   // 搜索引擎站点验证
   verification: {
-    google: "67Mp7Fny2XC3s23GQznzv9F3NWIqwIW1QBs4cU5CpJg",
+    google: "aCvitL2FdmB2CFVbwWkLIjFWnLH0MvnZH5s-nm48TQU",
     other: {
       "msvalidate.01": "C850AA3E0866309AF697D64E3EE5264C", // Bing
       "baidu-site-verification": "codeva-m88WZWLgpO",          // 百度
