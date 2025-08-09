@@ -2,11 +2,9 @@
 
 ## 📖 Overview / 项目简介
 
-**EN:**  
 PhD Application Readiness Calculator is an **interactive web tool** designed to help applicants evaluate their competitiveness for doctoral programs.  
 It uses a **unified 0–10 scoring rubric** across key dimensions (academic achievements, research proposal quality, research experience, recommendation letters, and interview performance) and provides targeted improvement suggestions.
 
-**ZH:**  
 博士申请竞争力自评计算器是一个**交互式网页工具**，用于帮助申请者快速评估自己在博士申请中的竞争力。  
 它基于**统一的 0–10 量表**，涵盖学术成绩、研究计划、科研经历、推荐信和面试表现等维度，并给出有针对性的提升建议。
 
