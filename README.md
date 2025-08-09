@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PhD Application Readiness Calculator / 博士申请竞争力自评计算器
 
-## Getting Started
+## 📖 Overview / 项目简介
 
-First, run the development server:
+**EN:**  
+PhD Application Readiness Calculator is an **interactive web tool** designed to help applicants evaluate their competitiveness for doctoral programs.  
+It uses a **unified 0–10 scoring rubric** across key dimensions (academic achievements, research proposal quality, research experience, recommendation letters, and interview performance) and provides targeted improvement suggestions.
 
+**ZH:**  
+博士申请竞争力自评计算器是一个**交互式网页工具**，用于帮助申请者快速评估自己在博士申请中的竞争力。  
+它基于**统一的 0–10 量表**，涵盖学术成绩、研究计划、科研经历、推荐信和面试表现等维度，并给出有针对性的提升建议。
+
+---
+
+## ✨ Features / 功能亮点
+
+- **Unified 0–10 Rubric / 统一量表**：各维度统一评分，避免量纲不一致
+- **Dynamic Scoring / 动态打分**：实时更新总分与短板分析
+- **Targeted Hints / 定向建议**：自动计算最划算的提升方向
+- **Multiple Schemes / 多种评估方案**：支持理工、工程应用、人文社科权重
+- **Responsive UI / 自适应界面**：桌面与移动端皆可舒适使用
+- **Language Gate / 语言门槛**：模拟真实申请流程的语言要求机制
+
+---
+
+## 🛠 Tech Stack / 技术栈
+
+- **Framework / 框架**: [Next.js 15](https://nextjs.org/) + App Router
+- **Language / 语言**: TypeScript
+- **Styling / 样式**: Tailwind CSS
+- **Deployment / 部署**: [Vercel](https://vercel.com/)
+
+---
+
+## 🚀 Getting Started / 快速开始
+
+### 1️⃣ Install Dependencies / 安装依赖
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+npm install
