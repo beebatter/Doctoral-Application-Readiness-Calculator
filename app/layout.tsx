@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   verification: {
     google: "67Mp7Fny2XC3s23GQznzv9F3NWIqwIW1QBs4cU5CpJg",
     other: {
-      "msvalidate.01": "C850AA3E0866390AF697D64E3BE5264C", // Bing
+      "msvalidate.01": "C850AA3E0866309AF697D64E3EE5264C", // Bing
       "baidu-site-verification": "codeva-m88WZWLgpO",          // 百度
     },
   },
