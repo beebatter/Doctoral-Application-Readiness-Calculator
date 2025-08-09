@@ -480,7 +480,7 @@ export default function PhDEvalCalculator() {
           <p className="text-xs text-gray-500 mt-3">提示：TS 为自评指标，实际录取强依赖于导师意愿、经费与具体研究方向匹配。该工具仅用于自我诊断与改进规划。</p>
         </Section>
 
-        <footer className="text-center text-xs text-gray-400 mt-10">© {new Date().getFullYear()} PhD Self-Evaluation Calculator · 统一量表模型 by ChatGPT</footer>
+        <footer className="text-center text-xs text-gray-400 mt-10">© {new Date().getFullYear()} PhD Self-Evaluation Calculator · 统一量表模型 by Easkwon</footer>
       </div>
     </div>
   );
