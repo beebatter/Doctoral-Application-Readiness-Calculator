@@ -9,7 +9,7 @@
 
 ## 📖 Overview / 项目简介
 
-🌐 **Live Demo:** [Doctoral Application Readiness Calc](https://doctoral-application-readiness-calc.vercel.app/)
+🌐 **Live Demo:** [Doctoral Application Readiness Calc](https://doctoral-application-readiness-calc.top/))
 
 PhD Application Readiness Calculator is an intuitive web application that empowers doctoral applicants to assess their competitiveness quickly and accurately. Utilizing a standardized 0–10 scoring rubric across critical dimensions, it delivers actionable insights to improve your application.
 
