@@ -91,7 +91,7 @@ This project is optimized for deployment on [Vercel](https://vercel.com/). Simpl
 
 ## 📄 License / 许可证
 
-MIT License © 2024
+MIT License © 2025
 
 ---
 
