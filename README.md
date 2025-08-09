@@ -9,11 +9,13 @@
 
 ## 📖 Overview / 项目简介
 
-**EN:**  
+
 PhD Application Readiness Calculator is an intuitive web application that empowers doctoral applicants to assess their competitiveness quickly and accurately. Utilizing a standardized 0–10 scoring rubric across critical dimensions, it delivers actionable insights to improve your application.
 
-**ZH:**  
+
 博士申请竞争力自评计算器是一款简洁易用的网页工具，帮助博士申请者快速、精准地评估自身竞争力。基于统一的0–10量表，覆盖关键维度，提供切实可行的提升建议。
+
+![Dashboard Preview](source/WechatIMG30927.jpg)  
 
 ---
 
@@ -86,15 +88,6 @@ This project is optimized for deployment on [Vercel](https://vercel.com/). Simpl
 
 ---
 
-## 📸 Preview / 预览
-
-![Dashboard Preview](docs/dashboard-preview.png)  
-*Dashboard showing scoring and suggestions / 评分与建议界面*
-
-![Mobile View](docs/mobile-view.png)  
-*Responsive design on mobile / 移动端自适应界面*
-
----
 
 ## 📄 License / 许可证
 
@@ -104,6 +97,6 @@ MIT License © 2024
 
 ## ⚠️ Disclaimer / 免责声明
 
-**EN:** This tool provides an approximate evaluation based on user input and should not replace official application advice or decisions. Use it as a guide to better understand your strengths and areas for improvement.
+ This tool provides an approximate evaluation based on user input and should not replace official application advice or decisions. Use it as a guide to better understand your strengths and areas for improvement.
 
-**ZH:** 本工具基于用户输入提供大致评估，不应替代官方申请建议或决定。仅供参考，帮助您更好地了解自身优势与不足。
+ 本工具基于用户输入提供大致评估，不应替代官方申请建议或决定。仅供参考，帮助您更好地了解自身优势与不足。
